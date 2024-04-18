@@ -1,0 +1,37 @@
+create database Attendence;
+use Attendence;
+create table Attendencesheet(
+ ID int primary key,
+ name varchar(30) not null,
+ rollno int,
+ noofclassheld int not null,
+ noofPresent int
+ 
+ );
+ insert into Attendencesheet(id,name,rollno,noofClassheld,noofPresent)values(123,"Dhoni",07,100,77);
+ insert into Attendencesheet(id,name,rollno,noofClassheld,noofPresent)values(124,"Raina",03,100,80);
+  insert into Attendencesheet(id,name,rollno,noofClassheld,noofPresent)values(125,"jadeja",08,100,85);
+   insert into Attendencesheet(id,name,rollno,noofClassheld,noofPresent)values(189,"sachin",10,100,100);
+    insert into Attendencesheet(id,name,rollno,noofClassheld,noofPresent)values(198,"rohith",47,100,75);
+    
+select * from attendencesheet;
+update attendencesheet
+set noofpresent='81'
+where ID='123';
+
+update attendencesheet
+set nofpresent='85'
+where ID='124';
+
+update attendencesheet
+set noofpresent='88'
+where ID='125';
+
+update attendencesheet
+set noofpresent='90'
+where ID='198';
+select*from attendencesheet;
+
+
+
+
