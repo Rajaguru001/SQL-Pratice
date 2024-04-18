@@ -1,0 +1,47 @@
+CREATE DATABASE  demo;
+USE demo;
+create table student(
+	id INT PRIMARY KEY,
+    name varchar(30),
+    gpa DECIMAL(3,2)
+
+
+);
+DESCRIBE student;
+
+insert into student(id,name,gpa) values(1,"jhon",7.62),
+insert into student(id,name,gpa) values(2,"Victor",7.72),
+insert into student(id,name,gpa) values(3,"Ravi",8.01),
+insert into student(id,name,gpa) values(4,"daniel",7,50),
+insert into student(id,name,gpa) values(5,"Dhoni",9.1);
+SELECT * FROM student;
+
+use details;
+create table student(
+id int,
+name varchar(30)not null,
+cgpa decimal(3,2)not null
+);
+insert into student(id,name,cgpa,year)values(1,"raja",9.3,"IV");
+insert into student(id,name,cgpa,year)values(2,"ramesh",8.2,'IV');
+insert into student(id,name,cgpa,year)values(3,"Ravi",7.6,"IV");
+insert into student(id,name,cgpa,year)values(4,"dhoni",7.0,"IV");
+insert into student(id,name,cgpa,year)values(5,"raina",8.0,"IV");
+select*from student;
+alter table student;
+desc student;
+add year varchar(50);
+ALTER TABLE student
+ADD PRIMARY KEY (id);
+truncate student;
+alter table student add department varchar(10);
+select * from student;
+update student 
+set department="ECE";
+where id=1;
+select * from student;
+
+
+
+
+
