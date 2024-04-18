@@ -1,0 +1,18 @@
+create database bank;
+use bank;
+create table bankdetails(
+ ID int primary key,
+ NAME varchar(30),
+ ACCOUNTNUMBER VARCHAR(30),
+ IFSC VARCHAR(30),
+ PANCARD VARCHAR(30)
+
+);
+describe bankdetails;
+
+insert into bankdetails(id,name,accountnumber,ifsc,pancard)values(9111,"LEO","09384874","IFSC0927","EMNP9212")
+insert into bankdetails(id,name,accountnumber,ifsc,pancard)values(9112,"RAVI","09388272","IFSC0987","EMNP9234");
+insert into bankdetails(id,name,accountnumber,ifsc,pancard)values(9113,"LEVI","09384654","IFSC0912","EMNP9256");
+insert into bankdetails(id,name,accountnumber,ifsc,pancard)values(9114,"VICTOR","09384098","IFSC0934","EMNP9278");
+insert into bankdetails(id,name,accountnumber,ifsc,pancard)values(9115,"VIKRAM","09384099","IFSC0956","EMNP9289");
+SELECT * FROM BANKDETAILS;
