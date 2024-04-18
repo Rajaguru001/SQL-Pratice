@@ -1,0 +1,17 @@
+create database votingcountes;
+use votingcountes;
+create table votingage(
+ Voterid int primary key,
+ name varchar(30),
+ age int,
+ district varchar(20)
+ );
+
+
+insert into votingage(voterid,name,age,district)values(6789,"Levi",21,"Chennai");
+insert into votingage(voterid,name,age,district)values(9221,"Leo",22,"Chennai");
+insert into votingage(voterid,name,age,district)values(8982,"Ravi",22,"Chennai");
+insert into votingage(voterid,name,age,district)values(8292,"Rio",22,"Chennai");
+insert into votingage(voterid,name,age,district)values(6790,"bevi",22,"Chennai");
+select * from Votingage;
+ 
