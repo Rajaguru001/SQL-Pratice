@@ -1,0 +1,18 @@
+create database productinfo;
+use productinfo;
+create table productpricefixing(
+ Id int primary key,
+ productname varchar(20),
+ costofproduct int,
+  noofwarranty int,
+  productrating int
+ 
+ 
+);
+insert into productpricefixing(Id,productname,costofproduct,noofwarranty,productrating)value(1,"Tata",1000000,3,5);
+insert into productpricefixing(Id,productname,costofproduct,noofwarranty,productrating)value(2,"Maruthi",200000,3,3);
+insert into productpricefixing(Id,productname,costofproduct,noofwarranty,productrating)value(3,"Benz",3000000,3,3);
+insert into productpricefixing(Id,productname,costofproduct,noofwarranty,productrating)value(4,"Toyato",400000,3,2);
+insert into productpricefixing(Id,productname,costofproduct,noofwarranty,productrating)value(5,"Mahindra",600000,3,1);
+
+select*from productpricefixing;
